@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-container h1 {
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#game-container .cell {
+    font-family:  "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+#restart-btn {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    color: black;
+    background-color: #f0eef1
+}
+
+#restart-btn:hover {
+    background-color: hsl(280, 10%, 74%);
+}
