@@ -1,6 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #eef6ff;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #f0eef1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(280, 10%, 74%);
+}
+
+button.hidden {
+    display: none;
+}
+
 .cell {
     width: 75px;
     height: 75px;
@@ -35,11 +74,11 @@
 }
 
 #restart-btn {
-    display: inline-block;
+    display: none;
+    margin: 0 auto;
     text-align: center;
     padding: 5px 10px;
     border-radius: 6px;
-    color: #ffffff;
     cursor: pointer;
     width: 100px;
     height: 40px;
